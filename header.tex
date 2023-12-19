@@ -1,0 +1,117 @@
+%!TEX program = xelatex
+\documentclass{article}
+
+\usepackage{quotchap}
+\usepackage{amsmath}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{import}
+\usepackage{kotex}
+\PassOptionsToPackage{table}{xcolor}
+\usepackage{calc}
+\usepackage{listings}
+\usepackage{indentfirst}
+\usepackage{tabularx}
+\usepackage{ulem}
+\usepackage{multicol}
+\usepackage{epigraph}
+\usepackage[many]{tcolorbox}
+\usepackage{tabto}
+\usepackage{setspace}
+\usepackage{titleps}
+\usepackage{fancyhdr}
+\usepackage{indentfirst}
+\usepackage{subcaption}
+\usepackage[export]{adjustbox}
+\usepackage{wrapfig}
+\usepackage{array}
+\usepackage{lastpage}
+\usepackage[labelformat=empty]{caption}
+\usepackage{hyperref}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\usepackage[a4paper,top=2cm,bottom=3cm,left=1.5cm,right=1.5cm,marginparwidth=1.5cm]{geometry}
+% \usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage[none]{hyphenat}
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX, LetterSpace=-2}
+
+\definecolor{boj}{RGB}{0,118,191}
+% \definecolor{ucpc-orange}{RGB}{255,153,0}
+\definecolor{acgreen}{RGB}{0,159,107}
+\definecolor{wared}{RGB}{231,76,60}
+\definecolor{light-gray}{RGB}{220,220,220}
+
+\definecolor{acbronze}{RGB}{173,86,0}
+\definecolor{acsilver}{RGB}{67,95,122}
+\definecolor{acgold}{RGB}{236,154,0}
+\definecolor{acplatinum}{RGB}{39,226,164}
+\definecolor{acdiamond}{RGB}{0,180,252}
+\definecolor{acruby}{RGB}{255,0,98}
+
+\definecolor{ucpc-orange}{RGB}{223, 98, 86}
+\definecolor{ucpc-gray}{RGB}{44,49,68}
+\definecolor{apc-orange}{RGB}{230, 135, 70}
+\definecolor{apc-gray}{RGB}{50, 50, 50}
+\definecolor{apc-pink}{RGB}{201,101,95}
+
+\setmainfont{TimesLTStd}[
+    Path = fonts/,
+    Extension = .otf,
+    UprightFont = *-Roman,
+    BoldFont = *-Bold,
+    ItalicFont = *-Italic,
+    BoldItalicFont = *-BoldItalic
+    ]
+
+\setsansfont{Inter}[
+    Path = fonts/,
+    Extension = .otf,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold,
+    ItalicFont = *-Italic,
+	BoldItalicFont = *-BoldItalic
+    ]
+
+\setmonofont{DMMono}[
+    Path = fonts/,
+    Extension = .ttf,
+    UprightFont = *-Regular,
+    BoldFont = *-Medium,
+    ItalicFont = *-Italic,
+    BoldItalicFont = *-MediumItalic
+    ]
+
+\setmainhangulfont[interhchar=-0.06em]{NotoSansCJKkr}[
+    Path = fonts/,
+    Extension = .otf,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold
+ %    ItalicFont = *-Italic,
+	% BoldItalicFont = *-BoldItalic
+    ]
+
+\setsanshangulfont[interhchar=-0.06em]{NotoSerifCJKkr}[
+    Path = fonts/,
+    Extension = .otf,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold
+ %    ItalicFont = *-Italic,
+	% BoldItalicFont = *-BoldItalic
+    ]
+    
+\defaultfontfeatures[AjouTTF]{
+    Path = fonts/,
+    Extension = .ttf,
+}
+
+\newfontfamily\ajou{AjouTTF}
+\newhangulfontfamily\ajouh{AjouTTF}
+
+ \renewcommand{\familydefault}{\sfdefault}
+

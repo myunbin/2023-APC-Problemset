@@ -1,0 +1,76 @@
+\newpage
+\section*{{\Large 문제 D.} \tabto{2cm}{\LARGE Space-A}}
+
+\begin{itemize}
+    \item 시간 제한 \tabto{2cm} 1초
+\end{itemize}
+
+\hrule
+
+\subsection*{문제}
+
+아주국의 핵심 우주 개발 프로젝트 Space-A를 맡은 선우는 탐사 로봇을 이용해 새로 발견된 미지의 행성을 탐사한다.
+
+미지의 행성에서 탐사할 공간은 2차원 평면으로 표현할 수 있고, 로봇은 처음에 $(1, 1)$에 위치해 있다. 로봇은 다음의 세 가지 이동을 할 수 있다.
+
+\begin{itemize}
+    \item \texttt{\color{red}R} : $x$좌표가 증가하는 직선 방향으로 한 칸 움직인다.
+    \item \texttt{\color{red}U} : $y$좌표가 증가하는 직선 방향으로 한 칸 움직인다.
+    \item \texttt{\color{red}X} : $x$, $y$좌표가 모두 증가하는 대각선 방향으로 한 칸 움직인다.
+\end{itemize}
+
+탐사 로봇은 이동 명령이 사전에 정해져 있다. 선우는 로봇의 정해진 이동 명령 중 몇 개의 명령을 임의로 선택하여 로봇을 이동시키고자 한다. 예를 들어 사전에 정해진 로봇의 이동 명령이 \texttt{\color{red}URURR}라고 하자. 여기서 첫 번째, 세 번째, 그리고 네 번째 명령을 선택하여 로봇을 이동시킨다면 로봇은 \texttt{\color{red}UUR}의 순서로 이동할 것이다.
+
+선우가 탐사해야 하는 미지의 행성의 지점들의 정보가 주어질 때, 로봇의 이동을 적절히 선택해 탐사할 수 있는 지점의 개수를 구해보자.
+
+한 번의 이동으로 여러 지점을 방문하는 것이 아니고, 시작 지점으로부터 도달할 수 있는 지점의 수를 구하는 것임에 유의하자. 또한 로봇의 시작 위치는 언제나 탐사가 가능하다.
+
+\subsection*{입력}
+
+첫 번째 줄에 로봇의 이동 횟수 $N$이 주어진다. $(1\leq N \leq 100\,000)$
+
+두 번째 줄에는 사전에 정해진 로봇의 이동 명령이 길이 $N$짜리 문자열로 주어진다.
+
+세 번째 줄에 로봇을 이용해 탐사하고 싶은 지점의 수 $K$가 주어진다. $(1\leq K \leq 100\,000)$
+
+네 번째 줄부터 $K$줄에 걸쳐 탐사해야 하는 지점의 $x$와 $y$좌표가 공백을 두고 주어진다. $(1\leq x, y \leq 500\,000)$
+
+같은 좌표는 두 번 입력되지 않는다.
+
+\subsection*{출력}
+
+탐사해야 하는 미지의 행성의 지점들 중 로봇의 이동을 적절히 선택해 탐사할 수 있는 지점의 개수를 출력하시오.
+
+\newpage
+
+\subsection*{예제}
+
+\begin{table}[h]
+% \centering
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|L{8.2cm}|L{8.2cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{standard input}} & \multicolumn{1}{c|}{\textbf{standard output}} \\ \hline\hline
+% 적절한 예제를 입력하면 됩니다.
+\texttt{5} & \texttt{5}\\ 
+\texttt{UUXRX} & \\ 
+\texttt{5} & \\ 
+\texttt{1 3} & \\ 
+\texttt{2 4} & \\ 
+\texttt{3 2} & \\
+\texttt{4 3} & \\
+\texttt{4 5} & \\
+\hline
+
+\texttt{5} & \texttt{0}\\ 
+\texttt{UUXRX} & \\ 
+\texttt{5} & \\ 
+\texttt{1 4} & \\ 
+\texttt{2 5} & \\ 
+\texttt{3 1} & \\
+\texttt{4 2} & \\
+\texttt{5 3} & \\
+\hline
+
+\end{tabular}
+\end{table}

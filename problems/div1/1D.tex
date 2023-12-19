@@ -1,0 +1,75 @@
+\newpage
+\section*{{\Large 문제 D.} \tabto{2cm}{\LARGE 현대모비스 특별상의 주인공은?}}
+
+\begin{itemize}
+    \item 시간 제한 \tabto{2cm} 2초
+\end{itemize}
+
+\hrule
+
+\subsection*{문제}
+
+\begin{figure}[h]
+    \centering
+    \captionsetup{width=0.7\textwidth}
+    \caption{\centering "현대모비스는 하드웨어 중심의 자동차 부품 회사에서 소프트웨어 중심의 기술 기업으로 거듭나기 위해 소프트웨어 연구개발 역량을 강화하고 있습니다."}
+    
+    \includegraphics[width=0.4\textwidth]{problems/image/mobis_lotto.png}
+    
+    \caption{[그림 1] 문제와는 무관한 그림입니다.}
+\end{figure}
+
+현대모비스는 실력 있는 소프트웨어 인재를 양성하고 독려하기 위해 APC의 주최 동아리인 A.N.S.I를 후원하고 있다. 올해 현대모비스는 2023 APC에 참가한 여러분들을 위해 특별상을 준비하였다. 특별상은 추첨을 통해 지급된다. 추첨의 진행은 현빈이가 맡게 되었다.
+
+현대모비스가 준비한 추첨판은 세로의 길이가 $N$, 가로의 길이가 $M$인 격자판이다. 추첨판의 각 격자에는 참가한 학생들의 이름이 적혀있다. 한 학생의 이름이 여러 번 적힐 수도 있다. 현빈이는 직사각형 모양의 또 다른 격자판을 준비하였다. 추첨은 아래의 방법으로 진행한다.
+
+\begin{itemize}
+    \item 현빈이가 준비한 세로의 길이가 $a$, 가로의 길이가 $b$인 격자판으로 추첨판을 덮는다. 이때, 세로 길이와 가로 길이중 하나는 $1$보다 커야 한다.
+    \item 추첨판을 덮을 때 추첨판에 부분적으로 걸치는 부분은 없다. 다시 말해 추첨판의 각 격자는 현빈이가 준비한 격자판에 의해 완전하게 덮이거나, 덮이지 않는다.
+    \item 현빈이가 준비한 격자판으로 덮은 격자에 적힌 여러 이름 중에서 같은 이름이 $\lceil \frac{a\times b+1}{2}\rceil$번 이상 나온다면, 그 이름을 가진 학생은 선물을 받는다.
+\end{itemize}
+
+현대모비스가 준비한 추첨판이 주어졌을 때, 선물을 받을 수 있는 학생들을 알아내 보자.
+
+\subsection*{입력}
+
+첫 번째 줄에 $N$과 $M$이 공백으로 구분되어 주어진다. $(1\leq N,M \leq 1\,000)$
+
+다음 $N$개의 줄에 걸쳐 각 격자에 적힌 학생의 이름이 한 줄에 $M$개씩 주어진다.
+
+학생의 이름들은 공백 없이 영어 소문자로만 이루어져 있으며 길이는 $20$을 넘지 않는다.
+
+
+\subsection*{출력}
+
+현대모비스가 준비한 선물을 받을 수 있는 이름을 사전순으로 한 줄에 한 명씩 출력한다.
+
+만약 받을 수 있는 학생이 없다면 \texttt{\color{red}MANIPULATED}를 출력한다.
+
+\newpage
+
+\subsection*{예제}
+
+\begin{table}[h]
+% \centering
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|L{8.2cm}|L{8.2cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{standard input}} & \multicolumn{1}{c|}{\textbf{standard output}} \\ \hline\hline
+% 적절한 예제를 입력하면 됩니다.
+\texttt{2 3} & \texttt{hyundai}\\ 
+\texttt{mobis mobis hyundai} & \texttt{mobis}\\ 
+\texttt{mobis leomessi hyundai} & \\ 
+\hline
+
+\texttt{1 1} & \texttt{MANIPULATED}\\ 
+\texttt{ronaldo} & \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection*{노트}
+
+$\lceil {x}\rceil$는 $x$보다 작지 않은 최소의 정수를 의미한다.
+
+대회가 끝난 뒤 있을 특별상을 기대해주세요!

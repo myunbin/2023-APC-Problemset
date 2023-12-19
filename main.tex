@@ -1,0 +1,132 @@
+\include{header}
+
+% 상단 ansi와 apc의 로고를 담당하는 heading 부분입니다.
+
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{30pt}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[R]{\includegraphics[width=1.8cm]{sponsor/APC23.png}}
+% \fancyhead[L]{\includegraphics[width=3.5cm]{sponsor/ansi.png}}
+
+\fancyfoot[C]{\thepage \hspace{1pt} / \pageref{LastPage}}
+
+\begin{document}
+\pagecolor{apc-gray}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.85\textwidth]{sponsor/apc-logo.png}
+\end{figure}
+\title{\color{white}\Huge{\ajouh \textbf{{\ajou 2023} 아주대학교 프로그래밍 경시대회}}}
+\author{\huge \color{white} Official Problemset - \textbf{Division 2}}
+\date{\color{white}\LARGE 2023년 5월 27일 토요일, \textbf{14:00 - 18:00}}
+\maketitle
+\begin{figure}[h]
+    \begin{center}
+    \vspace*{2.5cm}
+    
+    {\color{white}\large{주최 / 주관 / 후원}}
+    
+    {\color{gray}\rule{0.25\textwidth}{0.8pt}}
+    
+    \vspace*{0.8cm}
+    \begin{subfigure}{0.3\textwidth}
+        \centering  
+        \includegraphics[width=0.95\linewidth]{sponsor/white/ajouw.png}
+    \end{subfigure}
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width=0.93\linewidth]{sponsor/white/linkw.png} 
+    \end{subfigure}
+
+    \vspace*{1.2cm}
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[width=0.085\linewidth]{sponsor/white/ansi_w.png}\hspace*{0.18cm}{\large\color{white}아주대학교 소프트웨어학과 알고리즘 문제 해결 소학회}
+    \end{subfigure}
+
+    \vspace*{1cm}
+    \begin{subfigure}{0.2\textwidth}
+        \centering
+        \includegraphics[width=0.9\linewidth]{sponsor/white/startlinkw.png}
+    \end{subfigure}
+    \begin{subfigure}{0.2\textwidth}
+        \centering
+        \includegraphics[width=0.9\linewidth]{sponsor/white/solvedw.png}
+    \end{subfigure}
+    \begin{subfigure}{0.2\textwidth}
+        \centering
+        \includegraphics[width=0.87\linewidth]{sponsor/white/samsungw.png}
+    \end{subfigure}
+
+    \vspace*{0.7cm}
+    \begin{subfigure}{0.2\textwidth}
+        \centering
+        \includegraphics[width=0.9\linewidth]{sponsor/white/mobisw.png}
+    \end{subfigure}
+    \begin{subfigure}{0.2\textwidth}
+        \centering
+        \includegraphics[width=0.9\linewidth]{sponsor/white/morai.png}
+    \end{subfigure}
+    \begin{subfigure}{0.2\textwidth}
+        \centering
+        \includegraphics[width=0.88\linewidth]{sponsor/dspace.png}
+    \end{subfigure}
+    
+    \end{center}
+\end{figure}
+\thispagestyle{empty}
+
+
+\newpage
+
+\nopagecolor
+%============ 대회 규정/문항의 목록을 설명하는 페이지를 import합니다. =============
+
+\import{rule/}{rule.tex}
+
+%=======Div 1=======
+% \import{}{index_div1.tex}
+
+%=======Div 2=======
+\import{}{index_div2.tex}
+
+\vspace*{10cm}
+\begin{center}
+    {\Huge \color{gray} 여백의 미} 
+\end{center}
+
+\setlength{\parskip}{0.3\baselineskip}
+\setlength{\parindent}{0cm}
+
+%============ 대회 문항 페이지를 import합니다. =============
+\begin{spacing} {1.2}
+
+% \import{problems/}{0.template.tex}
+%=======Div 1=======
+% \import{problems/div1}{1A.tex}
+% \import{problems/div1}{1B.tex}
+% \import{problems/div1}{1C.tex}
+% \import{problems/div1}{1D.tex}
+% \import{problems/div1}{1E.tex}
+% \import{problems/div1}{1F.tex}
+% \import{problems/div1}{1G.tex}
+% \import{problems/div1}{1H.tex}
+% \import{problems/div1}{1I.tex}
+% \import{problems/div1}{1J.tex}
+
+% =======Div 2=======
+\import{problems/div2}{2A.tex}
+\import{problems/div2}{2B.tex}
+\import{problems/div2}{2C.tex}
+\import{problems/div2}{2D.tex}
+\import{problems/div2}{2E.tex}
+\import{problems/div2}{2F.tex}
+\import{problems/div2}{2G.tex}
+\import{problems/div2}{2H.tex}
+\import{problems/div2}{2I.tex}
+\import{problems/div2}{2J.tex}
+
+\end{spacing}
+\end{document}
+
